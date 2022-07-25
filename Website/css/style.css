@@ -1,0 +1,140 @@
+/* .main {
+  height: max-content;
+} */
+
+.left-vector {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.left-vector img {
+  height: 99.7vh;
+  width: auto;
+}
+
+.header {
+  margin: -15vh 38vw;
+  width: max-content;
+  position: absolute;
+}
+
+body {
+  background-color: #ffcccc;
+}
+
+.right-vector {
+  right: 0%;
+  bottom: 0%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-size: 36px;
+  text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.right-vector-text {
+  position: absolute;
+  width: max-content;
+  top: 75%;
+  left: 75%;
+  transform: translate(-75%, -75%);
+}
+
+.right-vector-text span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+#copy-sign {
+  color: #000000;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+/* :root {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  width: 100vw;
+  height: 100vh;
+} */
+
+.hexagons-container {
+  margin: 25vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0 5rem;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.hexagon {
+  clip-path: polygon(2% 18%, 50% 0, 98% 18%, 98% 78%, 50% 100%, 2% 78%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hexagon-shadow {
+  filter: drop-shadow(-0.5rem -0.5rem 0.5rem rgb(0 0 0 / 10%));
+}
+
+.hexagon img {
+  object-fit: cover;
+}
+
+.hexagon:hover {
+  background: url("../images/HexagonWhite.png");
+}
+
+.hexagon:hover .hexagon-img {
+  opacity: 0;
+}
+
+.hexagon-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+
+  width: min-content;
+  display: none;
+  position: absolute;
+  color: #000000;
+}
+
+.hexagon:hover .hexagon-text {
+  display: unset;
+}
+
+.shape {
+  width: 10rem;
+  height: 10rem;
+  rotate: (45 0 0);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #000000;
+}
