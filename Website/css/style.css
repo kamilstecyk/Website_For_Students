@@ -2,22 +2,46 @@
   height: max-content;
 } */
 
+:root {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+  font-size: 16px;
+} 
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+
 .left-vector {
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0%;
   margin: 0;
   padding: 0;
   z-index: -1;
+  height: 100vh;
 }
 
 .left-vector img {
-  height: 99.7vh;
+  height: 100vh;
   width: auto;
 }
 
 .header {
-  margin: -15vh 38vw;
+  position: fixed;
+  left:50%;
+  top:10%;
+  transform: translate(-50%,-10%);
   width: max-content;
   position: absolute;
 }
@@ -31,7 +55,7 @@ body {
   bottom: 0%;
   margin: 0;
   padding: 0;
-  position: absolute;
+  position: fixed;
   text-align: center;
   color: white;
 }
@@ -69,72 +93,85 @@ h1 {
   text-shadow: none;
 }
 
-/* :root {
-  padding: 0;
-  margin: 0;
-  outline: 0;
-  width: 100vw;
-  height: 100vh;
-} */
 
 .hexagons-container {
-  margin: 25vh 0;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-40%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0 5rem;
+  width: 80vw;
+  height: 50vh;
 }
 
-.break {
-  flex-basis: 100%;
-  height: 0;
+.wrapHexagon
+{
+  width: 30%;
+  height: 80%;
+  position: relative;
+  clip-path: polygon(50% 4%, 96% 30%, 96% 70%, 52% 95%, 4% 70%, 4% 30%);
+  z-index: 100;
+  transition: all 1s ease-in-out;
 }
 
-.hexagon {
-  clip-path: polygon(2% 18%, 50% 0, 98% 18%, 98% 78%, 50% 100%, 2% 78%);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.wrapHexagon:hover
+{
+  background-color: white;
+  cursor: pointer;
 }
 
-.hexagon-shadow {
-  filter: drop-shadow(-0.5rem -0.5rem 0.5rem rgb(0 0 0 / 10%));
-}
-
-.hexagon img {
-  object-fit: cover;
-}
-
-.hexagon:hover {
-  background: url("../images/HexagonWhite.png");
-}
-
-.hexagon:hover .hexagon-img {
+.wrapHexagon:hover img.imageInHexagon
+{
   opacity: 0;
 }
 
-.hexagon-text {
-  font-family: "Montserrat";
+.wrapHexagon:hover .menuDesc
+{
+  opacity: 1;
+}
+
+img.hexagon
+{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+img.imageInHexagon
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  height: 50%;
+  transition: all 1s ease-in-out;
+}
+
+
+.wrapHexagon h2
+{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-45%);
   font-style: normal;
   font-weight: 400;
-  font-size: 32px;
-
-  width: min-content;
-  display: none;
-  position: absolute;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
   color: #000000;
+  opacity: 0;
+  transition: all 1s ease-in-out;
 }
 
-.hexagon:hover .hexagon-text {
-  display: unset;
-}
 
-.shape {
-  width: 10rem;
-  height: 10rem;
-  rotate: (45 0 0);
-  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-  background-color: #000000;
+
+
+@media only screen  and (max-width: 1373px){
+
 }

@@ -1,0 +1,13 @@
+<svg width="169" height="169" viewBox="0 0 169 169" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="169" height="169" fill="url(#pattern0)"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_4_38" transform="scale(0.0078125)"/>
+</pattern>
+<linearGradient id="paint0_linear_4_38" x1="100.221" y1="169" x2="20.3206" y2="27.6705" gradientUnits="userSpaceOnUse">
+<stop offset="0.135417"/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+<image id="image0_4_38" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAAN2AAADdgF91YLMAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAC1QTFRF////9fX1/0tV9fX1/0tV9fX1/0tV9fX1/0tV9fX1/0tV9fX1/0tV9fX1/0tV7MyVawAAAA10Uk5TACMjoqKsrO3t8PD7+xOU3m4AAABrSURBVGje7dgxDYBQEETB84AFDGABH1igxwIGCA4IHrBAR0V+S0XQgIhrfjGv3xGwEZKkimqmNdHSxVBSXXHkgDtKMgAAAAAAAABAlcCXDAAAAAAAAABQJXDm9m+MOeCJdt4Tbb1TWZJq6gf9+a8bDCM5SwAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
