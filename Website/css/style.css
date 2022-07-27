@@ -60,7 +60,6 @@ body {
   color: white;
 }
 
-
 h1 {
   color: #ffffff;
   font-family: "Montserrat";
@@ -126,7 +125,8 @@ h1 {
 .wrapHexagon {
   position: relative;
   clip-path: url(#myClipPath);
-  width: 30%;
+  width: auto;
+  /* width: 30%; */
   height: 75%;
   z-index: 100;
   transition: all 1s ease-in-out;
@@ -178,31 +178,23 @@ img.imageInHexagon {
 
 /* media queries -------------------------- */
 
-@media only screen and (max-width: 1462px) {
- 
+@media only screen and (max-width: 1498px) {
   .wrapHexagon {
     width: 30%;
     height: auto;
   }
 }
 
-
-@media only screen and (min-width: 1200px) {
- 
+/* @media only screen and (min-width: 1200px) {
   .hexagons-container {
     width: 65vw;
   }
-
-}
+} */
 
 @media only screen and (max-width: 705px) {
- 
-  :root 
-  {
+  :root {
     font-size: 14px;
   }
-
-  
 
   .right-vector {
     position: fixed;
@@ -210,20 +202,17 @@ img.imageInHexagon {
     bottom: 0;
     width: 100vw;
     height: 5vh;
-    background-color: #FF9D9D;
-    
+    background-color: #ff9d9d;
   }
 
+  .right-vector-text {
+    top: 75%;
+    left: 95%;
+    transform: translate(-95%, -75%);
+    padding-bottom: 0.5rem;
+  }
 
-.right-vector-text {
-  top: 75%;
-  left: 95%;
-  transform: translate(-95%, -75%);
-  padding-bottom: 0.5rem;
-}
-
-  .right-vector img
-  {
+  .right-vector img {
     display: none;
   }
 
@@ -234,24 +223,19 @@ img.imageInHexagon {
     height: 60vh;
   }
 
-  .wrapHexagon
-  {
+  .wrapHexagon {
     width: 35%;
   }
-
 }
 
 @media only screen and (max-width: 420px) {
-
-  body
-  {
+  body {
     font-size: 12px;
   }
 
   :root {
     font-size: 12px;
   }
-  
 
   h1 {
     letter-spacing: 0.025em;
@@ -270,8 +254,6 @@ img.imageInHexagon {
     height: 0;
   }
 
-  
-
   .wrapHexagon {
     width: 40%;
     height: auto;
@@ -282,5 +264,4 @@ img.imageInHexagon {
     left: 50%;
     transform: translate(-50%, -30%);
   }
-
 }
