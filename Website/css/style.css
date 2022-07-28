@@ -32,6 +32,14 @@ body {
   height: 100vh;
 }
 
+.hexagon-first {
+  order: -1;
+}
+
+.hexagon-second {
+  order: -1;
+}
+
 .left-vector img {
   height: 100vh;
   width: auto;
