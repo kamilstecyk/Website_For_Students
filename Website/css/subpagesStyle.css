@@ -101,11 +101,11 @@
   height: 100%;
 }
 
-.about-me {
+.socialMedia {
   order: -1;
 }
 
-.white-box-aboutMe {
+.white-box-socialMedia {
   position: relative;
   border-radius: 25px;
 
@@ -113,7 +113,7 @@
   height: 60%;
 }
 
-.white-box-content-aboutMe {
+.white-box-content-socialMedia {
   position: absolute;
   z-index: 999;
   width: 100%;
@@ -141,6 +141,54 @@
 .break-point {
   flex-basis: 100%;
   height: 0;
+}
+
+.aboutMeText {
+  margin: 0 2rem;
+  width: fit-content;
+}
+
+.aboutMeText span {
+  color: #ff9d9d;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.aboutMeImg {
+  /* transform: scale(0.7); */
+  width: 15vw;
+  height: auto;
+}
+
+.aboutMeLayout {
+  justify-content: space-around;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.studentsBook {
+  flex-direction: column;
+}
+
+.topNavBar {
+  /* text-align: center; */
+  border-radius: 1.5rem;
+  width: 25vw;
+  height: 2.5rem;
+  background: #ff9d9d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 /* media queries -------------------------- */
@@ -176,8 +224,8 @@
     transform: scale(0.7);
   }
 
-  /* aboutMe page */
-  .white-box-aboutMe {
+  /* socialMedia page */
+  .white-box-socialMedia {
     width: 60%;
     height: 40%;
   }
@@ -208,8 +256,8 @@
     transform: scale(0.6);
   }
 
-  /* aboutMe page */
-  .white-box-aboutMe {
+  /* socialMedia page */
+  .white-box-socialMedia {
     width: 80%;
     height: 50%;
   }
@@ -246,8 +294,8 @@
     transform: translate(-30%, -10%);
   }
 
-  /* aboutMe page */
-  .white-box-aboutMe {
+  /* socialMedia page */
+  .white-box-socialMedia {
     width: 100%;
     height: 50%;
   }
@@ -271,8 +319,8 @@
     height: 50%;
   }
 
-  /* aboutMe page */
-  .white-box-aboutMe {
+  /* socialMedia page */
+  .white-box-socialMedia {
     width: 80vw;
     height: 50%;
   }
