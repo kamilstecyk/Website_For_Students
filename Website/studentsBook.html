@@ -29,29 +29,31 @@
 
     <div class="main-content">
       <div class="mainLayout studentsBook">
-        <div class="topNavBar" id="expandTopNavBar" onclick="expand()">
-          <span>Choose department</span>
-          <img
-            class="topNavBar-img"
-            src="./subPagesImages/studentsBook/bxs-chevron-down 1.svg"
-            alt="arrow down"
-          />
-        </div>
-
-        <div class="topNavBar-content" id="topNavBarContent">
-          <div>
-            <span>Polish department</span>
+        <div class="topNavBarWrapper">
+          <div class="topNavBar" id="expandTopNavBar" onclick="expand()">
+            <span>Choose department</span>
+            <img
+              class="topNavBar-img"
+              src="./subPagesImages/studentsBook/bxs-chevron-down 1.svg"
+              alt="arrow down"
+            />
           </div>
-          <div class="break-point"></div>
-          <div>
-            <span>English department</span>
+
+          <div id="topNavBarContent">
+            <input type="checkbox" name="department" value="pl" id="plDep" />
+            <label class="department" for="plDep">Polish department</label>
+
+            <div class="break-point"></div>
+
+            <input type="checkbox" name="department" value="pl" id="enDep" />
+            <label class="department" for="enDep">English department</label>
           </div>
         </div>
 
         <div class="white-box studentsBookWhiteBox">
           <div class="white-box-background"></div>
           <div class="white-box-content studentsBookContent">
-            <div class="bookBar">
+            <div class="bookBar pl">
               <img
                 src="./subPagesImages/studentsBook/bx-book-open 1.svg"
                 alt="book"
@@ -66,7 +68,7 @@
                 alt="download icon"
               />
             </div>
-            <div class="bookBar">
+            <div class="bookBar en">
               <img
                 src="./subPagesImages/studentsBook/bx-book-open 1.svg"
                 alt="book"
@@ -81,7 +83,7 @@
                 alt="download icon"
               />
             </div>
-            <div class="bookBar">
+            <div class="bookBar pl">
               <img
                 src="./subPagesImages/studentsBook/bx-book-open 1.svg"
                 alt="book"
@@ -97,7 +99,7 @@
               />
             </div>
             <!-- second box  -->
-            <div class="bookBar">
+            <div class="bookBar pl">
               <img
                 src="./subPagesImages/studentsBook/bx-book-open 1.svg"
                 alt="book"
@@ -113,7 +115,7 @@
               />
             </div>
 
-            <div class="bookBar">
+            <div class="bookBar en">
               <img
                 src="./subPagesImages/studentsBook/bx-book-open 1.svg"
                 alt="book"

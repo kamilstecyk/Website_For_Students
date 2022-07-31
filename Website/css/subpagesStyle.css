@@ -186,23 +186,22 @@
   cursor: pointer;
 }
 
-/* .topNavBar-content {
-  display: none;
-} */
-
 #topNavBarContent {
-  display: none;
-  /* display: flex; */
+  /* display: none; */
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
 
+  visibility: hidden;
+  opacity: 0;
+
   border-radius: 1.5rem;
   padding: 2rem;
   background: #ff9d9d;
 
-  transition: all 0.5s;
+  transition: visibility 0s, opacity 0.5s linear;
 }
 
 .topNavBar-img {
@@ -220,6 +219,25 @@
   letter-spacing: 0.05em;
   color: white;
   transition: all 0.35s;
+}
+
+#topNavBarContent label {
+  transition: all 0.35s;
+  padding: 0.25em;
+  border-radius: 0.5em;
+}
+
+#topNavBarContent input[type="checkbox"] {
+  display: none;
+}
+
+#topNavBarContent input[type="checkbox"]:checked + .department {
+  background-color: hsla(0, 100%, 96%, 0.4);
+}
+
+#topNavBarContent label:hover {
+  letter-spacing: 0.07em;
+  background-color: hsla(0, 100%, 96%, 0.4);
 }
 
 .topNavBar:hover > span {
