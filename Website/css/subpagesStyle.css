@@ -164,31 +164,133 @@
   justify-content: space-around;
 }
 
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
+/* 
+  studentsBook page
+*/
 
 .studentsBook {
   flex-direction: column;
 }
 
 .topNavBar {
-  /* text-align: center; */
   border-radius: 1.5rem;
   width: 25vw;
-  height: 2.5rem;
+  height: 3rem;
   background: #ff9d9d;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  position: relative;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+/* .topNavBar-content {
+  display: none;
+} */
+
+#topNavBarContent {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background: #ff9d9d;
+
+  transition: all 0.5s;
+}
+
+.topNavBar-img {
+  position: absolute;
+  right: 1rem;
+  transition: all 0.35s;
+}
+
+.topNavBar span,
+#topNavBarContent {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: white;
+  transition: all 0.35s;
+}
+
+.topNavBar:hover > span {
+  letter-spacing: 0.06em;
+}
+
+.topNavBar:hover > .topNavBar-img {
+  transform: translateY(4%);
+}
+
+.topNavBar:hover {
+  box-shadow: 0 0 4px 4px rgb(0 0 0 / 10%);
+}
+
+.studentsBookWhiteBox {
+  width: 60vw;
+}
+
+.studentsBookContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: unset;
+}
+
+.bookBar {
+  border-radius: 1.5rem;
+  width: 65%;
+  height: 6rem;
+  background: #ff9d9d;
+  display: none;
+  /* display: flex; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bookBar span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.download-icon {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.download-icon:hover {
+  transform: scale(1.1);
+}
+
+.up-arrows,
+.down-arrows {
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  transition: all 0.4s;
+}
+.up-arrows {
+  top: 2rem;
+}
+.up-arrows:hover {
+  transform: translateY(-5%) scale(1.05);
+}
+.down-arrows {
+  bottom: 2rem;
+}
+.down-arrows:hover {
+  transform: translateY(5%) scale(1.05);
 }
 
 /* media queries -------------------------- */
