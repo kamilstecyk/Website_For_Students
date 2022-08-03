@@ -53,6 +53,10 @@
   filter: blur(20px);
 }
 
+.darker-background {
+  background: #ff9d9d;
+}
+
 .white-box-content {
   position: absolute;
   z-index: 999;
@@ -143,13 +147,15 @@
   height: 0;
 }
 
-.aboutMeText {
+.aboutMeText,
+.curiositiesText {
   margin: 0 2rem;
   width: fit-content;
 }
 
-.aboutMeText span {
-  color: #ff9d9d;
+.aboutMeText span,
+.white-box-content span {
+  color: #ffffff;
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -172,7 +178,8 @@
   flex-direction: column;
 }
 
-.topNavBar {
+.topNavBar,
+.another-one-button {
   border-radius: 1.5rem;
   width: 25vw;
   height: 3rem;
@@ -309,6 +316,36 @@
 }
 .down-arrows:hover {
   transform: translateY(5%) scale(1.05);
+}
+
+/* curiosities page */
+
+.another-one-button {
+  position: absolute;
+  z-index: 999;
+  width: max-content;
+  padding: 0.75rem 2rem;
+  border-radius: 2rem;
+  bottom: -30%;
+  left: 20%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.another-one-button span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.curiosities-header {
+  letter-spacing: 0.25em;
+  text-shadow: none;
 }
 
 /* media queries -------------------------- */

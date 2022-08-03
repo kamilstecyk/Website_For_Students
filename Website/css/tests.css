@@ -1,0 +1,131 @@
+.header {
+  display: flex;
+  gap: 1rem;
+  top: 5%;
+}
+
+.subtitlePage {
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  font-weight: 500;
+  font-size: 2rem;
+  text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tests-header {
+  letter-spacing: 0.25em;
+  text-shadow: none;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* gap: 12vw; */
+}
+
+.mainLayout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.white-box {
+  position: relative;
+  border-radius: 25px;
+
+  width: 100%;
+  height: 100%;
+}
+
+.white-box-background {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  background: #ffebeb;
+
+  filter: blur(20px);
+}
+
+.white-box-content {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: unset;
+}
+
+.white-box a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ff9d9d;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 0.1rem;
+}
+
+.testBar {
+  border-radius: 1.5rem;
+  width: 65%;
+  height: 6rem;
+  background: #ff9d9d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testBar span {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.up-arrows,
+.down-arrows {
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  transition: all 0.4s;
+}
+.up-arrows {
+  top: 10%;
+}
+.up-arrows:hover {
+  transform: translateY(-5%) scale(1.05);
+}
+.down-arrows {
+  bottom: 10%;
+}
+.down-arrows:hover {
+  transform: translateY(5%) scale(1.05);
+}
+
+.right-arrow {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.right-arrow:hover {
+  transform: scale(1.1);
+}
