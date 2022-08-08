@@ -67,7 +67,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 30%;
+  gap: 5%;
 }
 
 .white-box a {
@@ -98,6 +98,7 @@
 
 .main-image {
   width: 50%;
+  height: 70%;
 }
 
 .main-image img {
@@ -346,6 +347,31 @@
 .curiosities-header {
   letter-spacing: 0.25em;
   text-shadow: none;
+}
+
+/* quiz page */
+
+#mainLayoutQuizes {
+  width: 80%;
+  height: 80%;
+}
+
+.quizBar {
+  border-radius: 1.5rem;
+  width: 85%;
+  height: 3rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quizBar span {
+  color: black;
+}
+
+.quizBar a {
+  font-size: 1rem;
 }
 
 /* media queries -------------------------- */
