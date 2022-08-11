@@ -26,9 +26,9 @@ function findScrollDirectionOtherBrowsers(event){
     }
 
     if (delta < 0){
-        plusBox(-1);
-    }else if (delta > 0){
         plusBox(1);
+    }else if (delta > 0){
+        plusBox(-1);
     }
 }
 
