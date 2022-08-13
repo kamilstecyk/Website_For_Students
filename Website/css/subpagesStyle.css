@@ -8,7 +8,7 @@
   letter-spacing: 0.05rem;
   font-weight: 500;
   font-size: 2rem;
-  text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 10px 10px 4px rgb(0 0 0 / 0.25);
 }
 
 .main-content {
@@ -36,7 +36,6 @@
 .white-box {
   position: relative;
   border-radius: 25px;
-
   width: 40%;
   height: 60%;
 }
@@ -47,7 +46,6 @@
   z-index: 1;
   position: absolute;
   background: var(--clr-whiteBox-bg);
-
   filter: blur(20px);
 }
 
@@ -185,13 +183,12 @@
   flex-direction: column;
   gap: 1rem;
 
-  visibility: hidden;
-  opacity: 0;
-
   border-radius: 1.5rem;
   padding: 2rem;
   background: var(--clr-medium-pink);
 
+  visibility: hidden;
+  opacity: 0;
   transition: visibility 0s, opacity 0.5s linear;
 }
 
@@ -304,13 +301,14 @@
   z-index: 999;
   width: max-content;
   padding: 0.75rem 2rem;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
   bottom: -30%;
   left: 20%;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 10px 10px 4px rgb(0 0 0 / 0.25);
 }
 
 .another-one-button span {
@@ -323,6 +321,18 @@
 .curiosities-header {
   letter-spacing: 0.25em;
   text-shadow: none;
+}
+
+.another-one-button img {
+  transition: all 0.85s;
+}
+
+.another-one-button:hover {
+  box-shadow: 11px 11px 4px rgb(0 0 0 / 0.32);
+}
+
+.another-one-button:hover :is(img) {
+  transform: rotate3d(1, 0, 0, 180deg);
 }
 
 /* quiz page */
@@ -419,6 +429,12 @@
 
 /* media queries -------------------------- */
 
+@media only screen and (max-width: 1400px) {
+  .icons {
+    transform: scale(0.75);
+  }
+}
+
 @media only screen and (max-width: 1110px) {
   :root {
     font-size: 12px;
@@ -441,21 +457,29 @@
     margin-bottom: 5rem;
   }
 
+  .aboutMeImg {
+    width: 25vw;
+    height: auto;
+  }
+
   .white-box {
     width: 60%;
     height: 40%;
   }
 
-  .homepage-button img {
-    transform: scale(0.7);
+  .studentsBookWhiteBox,
+  .testsWhiteBox {
+    width: 80%;
+    height: 80%;
   }
 
-  /* socialMedia page */
-  .white-box-socialMedia {
-    width: 60%;
-    height: 40%;
+  .testBar {
+    transform: scale(0.85);
   }
 
+  .up-arrows,
+  .down-arrows,
+  .homepage-button img,
   .icons img {
     transform: scale(0.7);
   }
@@ -473,19 +497,33 @@
     margin-bottom: 3rem;
   }
 
+  .aboutMeImg {
+    width: 25vw;
+    height: auto;
+  }
+
   .white-box {
     width: 80%;
     height: 50%;
   }
 
-  .homepage-button img {
-    transform: scale(0.6);
+  .testsWhiteBox {
+    width: 80%;
+    height: 100%;
   }
 
-  /* socialMedia page */
-  .white-box-socialMedia {
-    width: 80%;
-    height: 50%;
+  .testBar {
+    transform: scale(0.8);
+  }
+
+  .up-arrows,
+  .down-arrows {
+    transform: scale(0.6);
+    right: 3.5%;
+  }
+
+  .homepage-button img {
+    transform: scale(0.6);
   }
 
   .icons img {
@@ -509,21 +547,30 @@
     margin-bottom: 5rem;
   }
 
+  .aboutMeImg {
+    width: 35vw;
+    height: auto;
+  }
+
   .white-box {
     width: 100%;
     height: 50%;
+  }
+
+  .testsWhiteBox {
+    width: 100%;
+    height: 100%;
+  }
+
+  .up-arrows,
+  .down-arrows {
+    right: 1%;
   }
 
   .wrapHexagon h2 {
     bottom: 70%;
     left: 30%;
     transform: translate(-30%, -10%);
-  }
-
-  /* socialMedia page */
-  .white-box-socialMedia {
-    width: 100%;
-    height: 50%;
   }
 
   .icons img {
@@ -540,15 +587,25 @@
     margin-bottom: 5rem;
   }
 
+  .aboutMeImg {
+    width: 40vw;
+    height: auto;
+  }
+
   .white-box {
     width: 80vw;
     height: 50%;
   }
 
-  /* socialMedia page */
-  .white-box-socialMedia {
-    width: 80vw;
-    height: 50%;
+  .testsWhiteBox {
+    width: 100%;
+    height: 100%;
+  }
+
+  .up-arrows,
+  .down-arrows {
+    transform: scale(0.5);
+    right: 0;
   }
 
   .icons img {
