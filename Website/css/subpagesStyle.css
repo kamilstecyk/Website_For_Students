@@ -5,8 +5,6 @@
 
 .subtitlePage {
   color: #ffffff;
-  font-family: "Montserrat";
-  font-style: normal;
   letter-spacing: 0.05rem;
   font-weight: 500;
   font-size: 2rem;
@@ -48,13 +46,13 @@
   height: 100%;
   z-index: 1;
   position: absolute;
-  background: #ffebeb;
+  background: var(--clr-whiteBox-bg);
 
   filter: blur(20px);
 }
 
 .darker-background {
-  background: #ff9d9d;
+  background: var(--clr-medium-pink);
 }
 
 .white-box-content {
@@ -73,7 +71,7 @@
 .white-box a {
   text-decoration: none;
   cursor: pointer;
-  color: #ff9d9d;
+  color: var(--clr-medium-pink);
   font-size: 2rem;
   font-weight: 600;
   margin: 1.5rem;
@@ -83,7 +81,7 @@
 
 .white-box a:hover {
   letter-spacing: 0.3rem;
-  color: #dd7b7b;
+  color: var(--clr-dark-pink);
 }
 
 .homepage-button {
@@ -106,30 +104,16 @@
   height: 100%;
 }
 
-.socialMedia {
+.socialMedia-img {
   order: -1;
 }
 
-.white-box-socialMedia {
-  position: relative;
-  border-radius: 25px;
-
-  width: 40%;
-  height: 60%;
-}
-
-.white-box-content-socialMedia {
-  position: absolute;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-
-  display: flex;
+.socialMedia {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  gap: 10% 20%;
+  gap: 15% 10%;
 }
 
 .icons {
@@ -154,7 +138,6 @@
   width: fit-content;
 }
 
-.aboutMeText span,
 .white-box-content span {
   color: #ffffff;
   font-weight: 500;
@@ -184,7 +167,7 @@
   border-radius: 1.5rem;
   width: 25vw;
   height: 3rem;
-  background: #ff9d9d;
+  background: var(--clr-medium-pink);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -207,7 +190,7 @@
 
   border-radius: 1.5rem;
   padding: 2rem;
-  background: #ff9d9d;
+  background: var(--clr-medium-pink);
 
   transition: visibility 0s, opacity 0.5s linear;
 }
@@ -220,12 +203,10 @@
 
 .topNavBar span,
 #topNavBarContent {
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   letter-spacing: 0.05em;
-  color: white;
+  color: #ffffff;
   transition: all 0.35s;
 }
 
@@ -240,12 +221,12 @@
 }
 
 #topNavBarContent input[type="checkbox"]:checked + .department {
-  background-color: hsla(0, 100%, 96%, 0.4);
+  background-color: hsl(0 100% 96% / 0.4);
 }
 
 #topNavBarContent label:hover {
   letter-spacing: 0.07em;
-  background-color: hsla(0, 100%, 96%, 0.4);
+  background-color: hsl(0 100% 96% / 0.4);
 }
 
 .topNavBar:hover > span {
@@ -262,11 +243,10 @@
 
 .studentsBookWhiteBox {
   width: 60vw;
+  padding: 5vh 0;
 }
 
 .studentsBookContent {
-  display: flex;
-  align-items: center;
   justify-content: space-around;
   gap: unset;
 }
@@ -275,7 +255,7 @@
   border-radius: 1.5rem;
   width: 65%;
   height: 6rem;
-  background: #ff9d9d;
+  background: var(--clr-medium-pink);
   display: none;
   /* display: flex; */
   justify-content: space-around;
@@ -283,8 +263,6 @@
 }
 
 .bookBar span {
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.05em;
@@ -336,8 +314,6 @@
 }
 
 .another-one-button span {
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -356,9 +332,15 @@
   height: 80%;
 }
 
+.quizesContent {
+  align-items: flex-start;
+  /* margin-left: 5%; */
+  left: 5%;
+}
+
 .quizBar {
   border-radius: 1.5rem;
-  width: 85%;
+  width: 75%;
   height: 3rem;
   background: #ffffff;
   display: flex;
@@ -372,6 +354,67 @@
 
 .quizBar a {
   font-size: 1rem;
+}
+
+/* tests page */
+
+.testsMainContent {
+  gap: unset;
+}
+
+#mainLayoutTests {
+  width: 70vw;
+  height: 70vh;
+}
+
+.testsWhiteBox {
+  width: 100%;
+  height: 100%;
+}
+
+.testsContent {
+  justify-content: space-evenly;
+  gap: unset;
+}
+
+.tests-header {
+  letter-spacing: 0.25em;
+  text-shadow: none;
+  transform: translateY(-100%);
+}
+
+.testBar {
+  border-radius: 1.5rem;
+  width: 65%;
+  height: 6rem;
+  background: var(--clr-medium-pink);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.testBar span {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.quizesContent .up-arrows,
+.testsContent .up-arrows {
+  top: 10%;
+}
+.quizesContent .down-arrows,
+.testsContent .down-arrows {
+  bottom: 10%;
+}
+
+.right-arrow {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.right-arrow:hover {
+  transform: scale(1.1);
 }
 
 /* media queries -------------------------- */
