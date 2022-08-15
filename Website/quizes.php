@@ -1,3 +1,33 @@
+<?php 
+
+    $check_connection = require_once 'PHPScripts/database.php';  // we get true or false
+
+    if(!$check_connection)  // there is an error
+    {
+        exit();  // we want to end at once
+    }
+
+    // // select from Tests polish department
+    $result = $connection->query("SELECT * FROM Quizes q INNER JOIN Departments d USING(departmentID) WHERE d.name = 'Polish';"); 
+    $howManyRows = $result->num_rows;
+
+    if($result)
+    {
+      
+      for($i=0;$i<$howManyRows;$i++)
+     {
+          $row = $result->fetch_assoc();
+          $quiz_title = $row['quizTitle'];
+          $quiz_link = $row['quizLink'];
+
+           echo "<div>" . $quiz_title .  " " . '<a target="_blank" href="' . "http://" . $quiz_link . '">' . $quiz_link . "</a>" . "</a>" . "</div>";
+     }
+
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
