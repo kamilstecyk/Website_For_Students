@@ -348,7 +348,8 @@
   left: 5%;
 }
 
-.quizBar {
+.quizBar,
+.loginBar {
   border-radius: 1.5rem;
   width: 75%;
   height: 3rem;
@@ -425,6 +426,17 @@
 }
 .right-arrow:hover {
   transform: scale(1.1);
+}
+
+/* login teacher page */
+
+.loginBar {
+  background: var(--clr-light-pink);
+}
+
+.logIn {
+  width: fit-content;
+  padding: 0 8%;
 }
 
 /* media queries -------------------------- */
