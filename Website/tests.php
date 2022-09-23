@@ -1,3 +1,34 @@
+<?php 
+
+    $check_connection = require_once 'PHPScripts/database.php';  // we get true or false
+
+    if(!$check_connection)  // there is an error
+    {
+        exit();  // we want to end at once
+    }
+
+    // // select from Tests polish department
+    $result = $connection->query("SELECT * FROM Tests t INNER JOIN Departments d USING(departmentID) WHERE d.name = 'Polish';"); 
+    $howManyRows = $result->num_rows;
+
+    if($result)
+    {
+      
+      for($i=0;$i<$howManyRows;$i++)
+     {
+          $row = $result->fetch_assoc();
+          $test_title = $row['testTitle'];
+
+           echo "<div>" . $test_title . "</div>";
+     }
+
+    }
+
+    // this is only for tests, this script will be on test page with questions when will be ready
+   require_once 'PHPScripts/handleStudentTest.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>

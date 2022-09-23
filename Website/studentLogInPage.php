@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Masha's learning website</title>
+    <title>Student Login Page</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/subpagesStyle.css" />
   </head>
-  <body>
-    <!-- <div class="main"> -->
-    <div class="header">
-      <img src="./subPagesImages/bx-flag 1.svg" alt="letter P" />
-      <h2 class="subtitlePage">Polish Department</h2>
-    </div>
+  <body>    
     <div class="left-vector">
       <img src="./images/Vector6.png" />
     </div>
@@ -24,20 +19,24 @@
         <span id="copy-sign">&copy;</span>
       </div>
     </div>
-    <!-- </div> -->
 
     <div class="main-content">
       <div class="mainLayout">
         <div class="white-box">
-          <div class="white-box-background"></div>
-          <div class="white-box-content">
-            <a href="./tests.php"> Tests &#10095; </a>
-            <a href="./curiosities.php"> Curiosities &#10095; </a>
-            <a href="./quizes.php"> Quizes &#10095; </a>
+          <div class="white-box-background darker-background"></div>
+          <div class="white-box-content curiositiesText">
+            <span
+              >The phrase “long time no see” is believed to be a literal
+              translation of a Native American or Chinese phrase as it is not
+              grammatically correct.</span
+            >
           </div>
         </div>
         <div class="main-image">
-          <img src="./subPagesImages/undraw_exams_re_4ios 1.svg" alt="girl" />
+          <img
+            src="./subPagesImages/curiosities/undraw_researching_re_fuod 1.svg"
+            alt="girl"
+          />
         </div>
       </div>
 
