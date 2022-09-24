@@ -69,11 +69,13 @@
                 alt="book"
               />
               <span>Vocabulary test jeden</span>
-              <img
-                class="right-arrow"
-                src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
-                alt="right arrow"
-              />
+              <a href="studentLoginPage.php">
+                <img
+                  class="right-arrow"
+                  src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
+                  alt="right arrow"
+                />
+              </a>
             </div>
             <div class="testBar">
               <img
@@ -81,11 +83,13 @@
                 alt="book"
               />
               <span>Vocabulary test dwa</span>
-              <img
-                class="right-arrow"
-                src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
-                alt="right arrow"
-              />
+              <a href="studentLoginPage.php">
+                <img
+                  class="right-arrow"
+                  src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
+                  alt="right arrow"
+                />
+              </a>
             </div>
             <div class="testBar">
               <img
@@ -93,11 +97,13 @@
                 alt="book"
               />
               <span>Vocabulary test trzy</span>
-              <img
-                class="right-arrow"
-                src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
-                alt="right arrow"
-              />
+              <a href="studentLoginPage.php">
+                <img
+                  class="right-arrow"
+                  src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
+                  alt="right arrow"
+                />
+              </a>
             </div>
             <div class="testBar">
               <img
@@ -105,11 +111,13 @@
                 alt="book"
               />
               <span>Vocabulary test cztery</span>
-              <img
-                class="right-arrow"
-                src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
-                alt="right arrow"
-              />
+              <a href="studentLoginPage.php">
+                <img
+                  class="right-arrow"
+                  src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
+                  alt="right arrow"
+                />
+              </a>
             </div>
             <div class="testBar">
               <img
@@ -117,11 +125,13 @@
                 alt="book"
               />
               <span>Vocabulary test pięć</span>
-              <img
-                class="right-arrow"
-                src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
-                alt="right arrow"
-              />
+              <a href="studentLoginPage.php">
+                <img
+                  class="right-arrow"
+                  src="./subPagesImages/tests/bxs-right-arrow-square 1.svg"
+                  alt="right arrow"
+                />
+              </a>
             </div>
 
             <img
